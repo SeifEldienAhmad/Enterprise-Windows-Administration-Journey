@@ -16,7 +16,11 @@
 
     - Windows 10 VM
     - Resource Monitor
+    
   ### Top Memory Consuming Processes
+  ## Resource Monitor
+  ![Resource Monitor](Assets/resource-monitor-overview.png)
+  
   | Process | Working Set |
   |----------|------------:|
   | MsMpEng.exe | 113.64 MB |
