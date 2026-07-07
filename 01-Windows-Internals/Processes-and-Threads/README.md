@@ -41,7 +41,7 @@
   Working Set measures physical memory (RAM) currently active for a process, while Private Bytes measures virtual memory allocated exclusively to that process, regardless of whether it sits in RAM or has been swapped to the pagefile on your hard drive.
   ```
   
-## What I Learned
+## Key Takeaways
 
 - A Program is a static executable.
 - A Process is a running instance with its own memory and resources (like virtual address space, Process ID, Security Token, Handle Table, Environment Variables, at least one Thread, and Loaded DLLS).
@@ -59,7 +59,7 @@ Initially I confused Windows process creation with thread pools. After reviewing
   
   ↓
   
-  3- Generate the  EPROCESS Object
+  3- Create EPROCESS object
   
   ↓
   
@@ -67,11 +67,11 @@ Initially I confused Windows process creation with thread pools. After reviewing
   
   ↓
   
-  5- Install EXE
+  5- Map executable image into memory
   
   ↓
   
-  6- Install DLLs
+  6- Load required DLLs
   
   ↓
   
@@ -79,7 +79,7 @@ Initially I confused Windows process creation with thread pools. After reviewing
   
   ↓
   
-  8- Create Security Token
+  8- Assign an access token to the process.
   
   ↓
   
@@ -87,7 +87,7 @@ Initially I confused Windows process creation with thread pools. After reviewing
   
   ↓
   
-  10- Scheduler selects the thread
+  10- Scheduler selects the thread. Dispatcher performs the context switch.
   
   ↓
   
@@ -97,3 +97,32 @@ Initially I confused Windows process creation with thread pools. After reviewing
   
   12- Notepad Window appears
 ```
+## Interview Questions
+
+- What is the difference between a Program and a Process?
+  > A program is a static executable, while a process is a running instance with its own memory and resources (like virtual address space, Process ID, Security Token, Handle Table, Environment Variables, at least one Thread, and Loaded DLLS).
+
+- Does Windows schedule Processes or Threads?
+  > Windows schedules the threads rather than the processes
+
+- Why does Windows create multiple svchost.exe instances?
+  > I think Windows creates multiple processes to isolate and safeguard the other tasks from crashes that may happen
+
+- What is Virtual Address Space?
+  > a simulated, contiguous range of memory addresses that the operating system provides to a program or process. It creates the illusion that each program has its own exclusive, large block of memory, while the operating system secretly maps these virtual addresses to actual physical hardware memory (RAM) or disk storage
+
+- What is the role of the Primary Thread?
+  > the default, initial thread of execution created when a program or application process starts. It is responsible for launching the application, executing the entry-point code, and coordinating the overall lifecycle of the process
+
+## Skills Practiced
+
+  - Windows Administration
+  - Process Analysis
+  - Resource Monitoring
+  - Windows Internals
+  - Troubleshooting
+
+## References
+  - Microsoft Learn
+  - Windows Internals (Russinovich)
+  - Microsoft Documentation
