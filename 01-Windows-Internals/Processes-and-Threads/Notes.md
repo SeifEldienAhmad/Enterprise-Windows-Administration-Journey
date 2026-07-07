@@ -1,7 +1,7 @@
 # Explaining the Processes Found in the Memory Checking task
 
 | Process | What the process do |
-|----------|--------------------:|
+|----------|:--------------------|
 | MsMpEng.exe | the core executable for Microsoft Defender Antivirus. Its primary job is to perform real-time threat scanning, monitor your system for malicious software, download protection updates, and protect your computer in the background. |
 | SearchUI.exe | a core Windows process that powers the search bar, Start Menu search, and the Cortana assistant |
 | svchost.exe (LocalSystemNetwork) | a core Windows container that runs multiple critical background services requiring network access. It groups related services to conserve system memory and isolates them for security |
