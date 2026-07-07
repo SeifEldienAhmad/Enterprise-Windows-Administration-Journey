@@ -1,4 +1,7 @@
 # Windows Processes and Threads
+  > Status: Completed
+  > Difficulty: Beginner
+  > Estimated Study Time: 4 Hours
 
 ## Objectives:
 > Understand how Windows executes a program and the relationship between Programs, Processes, and Threads.
@@ -13,9 +16,6 @@
 ## Practical Lab
 
   ### Environment
-    > Status: Completed
-    > Difficulty: Beginner
-    > Estimated Study Time: 4 Hours
     - Windows 10 VM
     - Resource Monitor
     
