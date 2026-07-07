@@ -13,12 +13,14 @@
 ## Practical Lab
 
   ### Environment
-
+    > Status: Completed
+    > Difficulty: Beginner
+    > Estimated Study Time: 4 Hours
     - Windows 10 VM
     - Resource Monitor
     
   ### Top Memory Consuming Processes
-  ## Resource Monitor
+  #### Resource Monitor
   ![Resource Monitor](Assets/resource-monitor-overview.png)
   
   | Process | Working Set |
