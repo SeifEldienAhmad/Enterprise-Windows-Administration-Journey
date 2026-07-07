@@ -1,6 +1,8 @@
 # Windows Processes and Threads
   > Status: Completed
+
   > Difficulty: Beginner
+
   > Estimated Study Time: 4 Hours
 
 ## Objectives:
